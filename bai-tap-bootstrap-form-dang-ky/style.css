@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #eef4ff, #f8fbff);
+    min-height: 100vh;
+}
+
+.page-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.registration-card {
+    border: 0;
+    border-radius: 18px;
+}
+
+.registration-card h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.form-label {
+    font-weight: 600;
+}
+
+.form-control,
+.form-select {
+    min-height: 48px;
+}
+
+.btn-primary {
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+@media (max-width: 576px) {
+    .page-wrapper {
+        align-items: flex-start;
+    }
+
+    .registration-card h1 {
+        font-size: 1.6rem;
+    }
+
+    .card-body {
+        padding: 24px !important;
+    }
+}
