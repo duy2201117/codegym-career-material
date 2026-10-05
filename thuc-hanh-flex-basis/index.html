@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành CSS flex-basis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <h1>Thực hành CSS | flex-basis Property</h1>
+        <p class="intro">Minh họa cách <code>flex-basis</code> xác định kích thước cơ sở ban đầu của Flex Item trên main axis.</p>
+
+        <section class="example">
+            <h2>Ví dụ 1: flex-basis với đơn vị px</h2>
+            <p><code>200px / 100px / 150px</code></p>
+            <div class="flex-row px-example">
+                <div class="item item-px-1">Item 1<br><span>200px</span></div>
+                <div class="item item-px-2">Item 2<br><span>100px</span></div>
+                <div class="item item-px-3">Item 3<br><span>150px</span></div>
+            </div>
+        </section>
+
+        <section class="example">
+            <h2>Ví dụ 2: flex-direction: column</h2>
+            <p><code>flex-basis: 100px;</code> tác động theo chiều dọc.</p>
+            <div class="flex-column column-example">
+                <div class="item">Item 1 - 100px</div>
+                <div class="item">Item 2 - 100px</div>
+                <div class="item">Item 3 - 100px</div>
+            </div>
+        </section>
+
+        <section class="example">
+            <h2>Ví dụ 3: flex-basis với %</h2>
+            <p>Mỗi item có <code>flex-basis: 50%;</code></p>
+            <div class="flex-row percent-example">
+                <div class="item">Item 1 - 50%</div>
+                <div class="item">Item 2 - 50%</div>
+            </div>
+        </section>
+
+        <section class="example">
+            <h2>Ví dụ 4: Kết hợp flex-basis với flex-grow</h2>
+            <p>Cùng <code>flex-basis: 100px</code>, nhưng grow theo tỷ lệ <strong>1 : 2 : 1</strong>.</p>
+            <div class="flex-row grow-example">
+                <div class="item grow-1">Item 1<br><span>grow 1</span></div>
+                <div class="item grow-2">Item 2<br><span>grow 2</span></div>
+                <div class="item grow-3">Item 3<br><span>grow 1</span></div>
+            </div>
+        </section>
+
+        <section class="example compact">
+            <h2>Giá trị khác</h2>
+            <ul>
+                <li><code>flex-basis: auto;</code> - dùng width/height phù hợp hoặc nội dung.</li>
+                <li><code>flex-basis: initial;</code> - đưa về giá trị mặc định <code>auto</code>.</li>
+                <li><code>flex-basis: inherit;</code> - kế thừa giá trị từ phần tử cha.</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
