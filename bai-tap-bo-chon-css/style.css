@@ -1,0 +1,76 @@
+/* Element selector */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef6ff;
+    color: #222;
+}
+
+/* Class selector */
+.container {
+    width: 80%;
+    max-width: 760px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #c9d8e8;
+    border-radius: 12px;
+}
+
+/* Grouping selector */
+h1, h2 {
+    color: #1f5f99;
+}
+
+/* Element selector */
+h1 {
+    text-align: center;
+}
+
+/* ID selector */
+#intro {
+    line-height: 1.7;
+    background-color: #f8fbff;
+    padding: 15px;
+    border-left: 4px solid #1f5f99;
+}
+
+.hobby-list {
+    padding-left: 25px;
+}
+
+.hobby {
+    margin: 8px 0;
+    font-weight: bold;
+}
+
+/* Các class khác nhau để mỗi sở thích có một màu */
+.hobby-one {
+    color: #d35400;
+}
+
+.hobby-two {
+    color: #8e44ad;
+}
+
+.hobby-three {
+    color: #148f77;
+}
+
+/* ID selector cho nút */
+#action-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: #1f5f99;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Pseudo-class selector */
+#action-button:hover {
+    background-color: #15466f;
+    transform: scale(1.05);
+}
