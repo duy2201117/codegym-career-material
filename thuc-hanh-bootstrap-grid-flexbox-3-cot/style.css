@@ -1,0 +1,45 @@
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+header h1 {
+    font-weight: 700;
+}
+
+.column-box {
+    min-height: 190px;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.column-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08);
+}
+
+.carousel-image {
+    height: 430px;
+    object-fit: cover;
+    filter: brightness(0.72);
+}
+
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.form-card {
+    max-width: 720px;
+}
+
+@media (max-width: 767.98px) {
+    .carousel-image {
+        height: 260px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
