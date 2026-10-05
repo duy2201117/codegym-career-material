@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>CSS Flexbox Layout</h1>
+            <p>Bố cục trang web responsive bằng Flexbox</p>
+        </header>
+
+        <nav class="nav">
+            <a href="#">Trang chủ</a>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Bài viết</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+
+        <div class="main-container">
+            <main class="content">
+                <h2>Main Content</h2>
+                <p>
+                    Đây là khu vực nội dung chính. Trên màn hình desktop, khu vực này
+                    chiếm 3 phần chiều rộng, trong khi Sidebar chiếm 1 phần.
+                </p>
+
+                <div class="cards">
+                    <article class="card">
+                        <h3>Bài viết 1</h3>
+                        <p>Flexbox giúp sắp xếp các phần tử linh hoạt theo hàng hoặc cột.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Bài viết 2</h3>
+                        <p>Thuộc tính flex giúp phân chia không gian giữa Content và Sidebar.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Bài viết 3</h3>
+                        <p>Media Query giúp bố cục hiển thị tốt trên thiết bị di động.</p>
+                    </article>
+                </div>
+            </main>
+
+            <aside class="sidebar">
+                <h2>Sidebar</h2>
+                <h3>Tin mới</h3>
+                <ul>
+                    <li>Học Flexbox cơ bản</li>
+                    <li>Flex-direction</li>
+                    <li>Flex-grow và flex-wrap</li>
+                </ul>
+
+                <div class="ad">Quảng cáo</div>
+            </aside>
+        </div>
+
+        <footer class="footer">
+            <p>© 2026 CSS Flexbox Practice</p>
+        </footer>
+    </div>
+</body>
+</html>
