@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+.card {
+    width: 280px;
+    height: 150px;
+    padding: 20px;
+    border: 5px solid #3498db;
+    margin: 20px;
+}
+
+.card:nth-child(2) {
+    box-sizing: content-box;
+    background-color: #2ecc71;
+}
+
+.card:nth-child(3) {
+    box-sizing: border-box;
+    background-color: #f1c40f;
+}
+
+.card:nth-child(4) {
+    box-sizing: border-box;
+    background-color: #e74c3c;
+    color: white;
+}
