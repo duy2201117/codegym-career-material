@@ -1,0 +1,31 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    letter-spacing: 0.5px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #e9f3ff, #ffffff);
+    border: 1px solid #dbe9f7;
+}
+
+.hero h1 {
+    color: #0d6efd;
+}
+
+section h2 {
+    color: #212529;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-nav {
+        padding-top: 12px;
+    }
+
+    .dropdown-menu {
+        margin-bottom: 8px;
+    }
+}
