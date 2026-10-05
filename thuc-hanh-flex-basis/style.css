@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+.page {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+    padding: 32px 0 48px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 28px;
+    color: #555;
+}
+
+.example {
+    background: white;
+    border: 1px solid #dfe5ec;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
+
+.example h2 {
+    margin-top: 0;
+}
+
+code {
+    background: #eef2f7;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.flex-row {
+    display: flex;
+    gap: 10px;
+    align-items: stretch;
+    border: 2px dashed #9aa7b5;
+    padding: 12px;
+    overflow-x: auto;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 380px;
+    border: 2px dashed #9aa7b5;
+    padding: 12px;
+}
+
+.item {
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+.item span {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.px-example .item {
+    background: lightblue;
+}
+
+.item-px-1 { flex-basis: 200px; }
+.item-px-2 { flex-basis: 100px; }
+.item-px-3 { flex-basis: 150px; }
+
+.column-example .item {
+    flex-basis: 100px;
+    background: lightgreen;
+}
+
+.percent-example .item {
+    flex-basis: 50%;
+    background: lightcoral;
+    flex-shrink: 1;
+}
+
+.grow-example {
+    width: 100%;
+}
+
+.grow-example .item {
+    flex-basis: 100px;
+    background: lightblue;
+    flex-shrink: 1;
+}
+
+.grow-1 { flex-grow: 1; }
+.grow-2 { flex-grow: 2; }
+.grow-3 { flex-grow: 1; }
+
+.compact ul {
+    margin-bottom: 0;
+    line-height: 1.8;
+}
+
+@media (max-width: 700px) {
+    .page {
+        width: 94%;
+    }
+
+    .example {
+        padding: 16px;
+    }
+
+    .px-example,
+    .grow-example {
+        flex-wrap: wrap;
+    }
+
+    .percent-example {
+        flex-direction: column;
+    }
+
+    .percent-example .item {
+        flex-basis: auto;
+        width: 100%;
+    }
+}
