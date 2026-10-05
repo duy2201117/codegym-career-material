@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid-row-gap Property</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="wrapper">
+        <h1>Thực hành CSS grid-row-gap</h1>
+
+        <section class="example">
+            <h2>Ví dụ 1: Giá trị length</h2>
+            <p><code>grid-row-gap: 20px;</code></p>
+            <div class="grid-container gap-length">
+                <div>Ô 1</div>
+                <div>Ô 2</div>
+                <div>Ô 3</div>
+                <div>Ô 4</div>
+            </div>
+        </section>
+
+        <section class="example">
+            <h2>Ví dụ 2: Giá trị phần trăm (%)</h2>
+            <p><code>grid-row-gap: 5%;</code></p>
+            <div class="grid-container gap-percent">
+                <div>Ô 1</div>
+                <div>Ô 2</div>
+                <div>Ô 3</div>
+                <div>Ô 4</div>
+            </div>
+        </section>
+
+        <section class="example">
+            <h2>Ví dụ 3: Các giá trị toàn cục</h2>
+            <div class="global-grid">
+                <div class="global-box">
+                    <h3>initial</h3>
+                    <p><code>grid-row-gap: initial;</code></p>
+                    <div class="grid-container gap-initial">
+                        <div>A</div><div>B</div><div>C</div><div>D</div>
+                    </div>
+                </div>
+
+                <div class="inherit-parent global-box">
+                    <h3>inherit</h3>
+                    <p><code>grid-row-gap: inherit;</code></p>
+                    <div class="grid-container gap-inherit">
+                        <div>A</div><div>B</div><div>C</div><div>D</div>
+                    </div>
+                </div>
+
+                <div class="global-box">
+                    <h3>unset</h3>
+                    <p><code>grid-row-gap: unset;</code></p>
+                    <div class="grid-container gap-unset">
+                        <div>A</div><div>B</div><div>C</div><div>D</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <p class="note">Lưu ý: CSS hiện đại thường dùng <code>row-gap</code> thay cho <code>grid-row-gap</code>.</p>
+    </main>
+</body>
+</html>
