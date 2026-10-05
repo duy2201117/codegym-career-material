@@ -1,0 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+.overflow-box {
+    width: 300px;
+    height: 100px;
+    background-color: lightgray;
+    padding: 10px;
+    overflow: auto;
+}
