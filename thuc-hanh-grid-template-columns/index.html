@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid-template-columns</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <h1>Thực hành CSS grid-template-columns</h1>
+
+        <section class="example">
+            <h2>Ví dụ 1: Tạo 3 cột có kích thước bằng nhau</h2>
+            <p><code>grid-template-columns: 1fr 1fr 1fr;</code></p>
+            <div class="grid-container grid-equal">
+                <div>Ô 1</div>
+                <div>Ô 2</div>
+                <div>Ô 3</div>
+                <div>Ô 4</div>
+                <div>Ô 5</div>
+                <div>Ô 6</div>
+            </div>
+        </section>
+
+        <section class="example">
+            <h2>Ví dụ 2: Tạo các cột có kích thước khác nhau</h2>
+            <p><code>grid-template-columns: 100px 200px 1fr;</code></p>
+            <div class="grid-container grid-different">
+                <div>Cột 1</div>
+                <div>Cột 2</div>
+                <div>Cột 3</div>
+                <div>Cột 1</div>
+                <div>Cột 2</div>
+                <div>Cột 3</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
