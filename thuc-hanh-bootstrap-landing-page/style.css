@@ -1,0 +1,59 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+.navbar-brand {
+    letter-spacing: 0.5px;
+}
+
+.hero {
+    min-height: 460px;
+    display: flex;
+    align-items: center;
+}
+
+.hero p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-text {
+    max-width: 760px;
+}
+
+.services-section {
+    background-color: #f8f9fa;
+}
+
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.12) !important;
+}
+
+.service-icon {
+    font-size: 3rem;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+@media (max-width: 767.98px) {
+    .hero {
+        min-height: 390px;
+    }
+
+    .hero .display-4 {
+        font-size: 2.3rem;
+    }
+}
