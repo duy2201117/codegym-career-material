@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeeee;
+    color: #333333;
+}
+
+#main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#head {
+    height: 100px;
+    background-color: #e8f2ff;
+    border: 1px solid #b9cbe0;
+    margin-bottom: 5px;
+    padding: 15px;
+}
+
+.logo {
+    width: 180px;
+    height: 68px;
+    float: left;
+    background-color: #2d89ef;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 68px;
+}
+
+.banner {
+    margin-left: 200px;
+    text-align: center;
+}
+
+.banner h1 {
+    margin: 5px 0;
+}
+
+.banner p {
+    margin: 8px 0 0;
+}
+
+#head-link {
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#head-link a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 18px;
+    border-right: 1px solid #cccccc;
+}
+
+#head-link a:last-child {
+    border-right: none;
+}
+
+#head-link a:hover,
+#left a:hover,
+#footer a:hover {
+    color: #d93025;
+}
+
+#left {
+    width: 200px;
+    min-height: 520px;
+    float: left;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+
+#left h3 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #2d89ef;
+}
+
+#left ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#left li {
+    border-bottom: 1px solid #dddddd;
+}
+
+#left a {
+    display: block;
+    padding: 12px 4px;
+    color: #333333;
+    text-decoration: none;
+}
+
+#content {
+    width: 560px;
+    min-height: 520px;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+.top-content {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.hot-news,
+.photo-slide,
+.news-box {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px;
+}
+
+.hot-news {
+    width: 55%;
+    height: 170px;
+    float: left;
+}
+
+.photo-slide {
+    width: 43%;
+    height: 170px;
+    float: right;
+}
+
+.hot-news h2,
+.photo-slide h2,
+.news-box h2 {
+    margin-top: 0;
+    color: #2d89ef;
+}
+
+.photo-placeholder {
+    height: 85px;
+    background-color: #d9e8fb;
+    color: #5277a8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.news-box {
+    min-height: 155px;
+    margin-bottom: 10px;
+}
+
+#right {
+    width: 220px;
+    min-height: 520px;
+    float: right;
+    margin-bottom: 5px;
+}
+
+.widget {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.widget h3 {
+    margin-top: 0;
+    text-align: center;
+    color: #2d89ef;
+}
+
+.widget table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 12px;
+}
+
+.widget th,
+.widget td {
+    border: 1px solid #dddddd;
+    padding: 5px 2px;
+}
+
+.bars {
+    height: 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.bars span {
+    width: 25px;
+    background-color: #74b9ff;
+}
+
+.bars span:nth-child(1) { height: 35px; }
+.bars span:nth-child(2) { height: 65px; }
+.bars span:nth-child(3) { height: 48px; }
+.bars span:nth-child(4) { height: 75px; }
+
+.map-box {
+    height: 95px;
+    background-color: #d9f2dd;
+    color: #4b7d52;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+#footer {
+    height: 55px;
+    clear: both;
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #222222;
+    padding: 18px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+@media (max-width: 1020px) {
+    #main {
+        width: 96%;
+    }
+
+    #left,
+    #content,
+    #right {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #left,
+    #right {
+        min-height: auto;
+    }
+}
