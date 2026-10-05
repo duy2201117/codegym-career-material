@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 32px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+}
+
+.survey-container {
+  max-width: 980px;
+  margin: 0 auto;
+  background: #fff;
+  border: 1px solid #d7d7d7;
+  padding: 28px 30px 36px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.description {
+  margin: 0 0 24px;
+  padding-bottom: 18px;
+  border-bottom: 1px dotted #ccc;
+  color: #555;
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+label,
+legend,
+.table-title {
+  font-weight: 700;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+fieldset label {
+  display: block;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+select,
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  max-width: 420px;
+  margin-top: 8px;
+  padding: 10px 12px;
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  font: inherit;
+}
+
+textarea {
+  max-width: 100%;
+  resize: vertical;
+}
+
+.price-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.price-row input {
+  width: 130px;
+  margin-top: 0;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  border: 1px solid #ccc;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 720px;
+}
+
+th,
+td {
+  border: 1px solid #d3d3d3;
+  padding: 12px 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th {
+  background: #e6e6e6;
+  font-size: 14px;
+}
+
+tbody tr:nth-child(odd) {
+  background: #f7f7f7;
+}
+
+td:first-child {
+  text-align: left;
+  font-weight: 700;
+  width: 42%;
+}
+
+td label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-weight: 400;
+}
+
+button {
+  padding: 10px 24px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background: linear-gradient(#fff, #ddd);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(#f8f8f8, #cfcfcf);
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  .survey-container {
+    padding: 20px 16px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
