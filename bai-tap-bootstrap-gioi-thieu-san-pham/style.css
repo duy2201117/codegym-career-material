@@ -1,0 +1,25 @@
+body {
+    background-color: #ffffff;
+}
+
+.py-lg-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.product-image {
+    max-height: 560px;
+    object-fit: cover;
+}
+
+/* Minh họa thuộc tính display: contents theo yêu cầu bài học. */
+.specs-contents {
+    display: contents;
+}
+
+@media (max-width: 991.98px) {
+    .py-lg-6 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+}
