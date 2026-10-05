@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids Cartoon - Xem hoạt hình trực tuyến</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">🎬 Kids Cartoon</div>
+        <div class="search-box">
+            <input id="searchInput" type="text" placeholder="Tìm kiếm phim hoạt hình...">
+        </div>
+    </header>
+
+    <nav class="head-link">
+        <a href="#home">Trang chủ</a>
+        <a href="#latest" data-sort="latest">Mới cập nhật</a>
+        <a href="#popular" data-sort="views">Xem nhiều nhất</a>
+        <a href="#about">Giới thiệu</a>
+    </nav>
+
+    <main class="content" id="home">
+        <aside class="left-content">
+            <div class="sidebar-title">
+                <h2>Danh sách phim</h2>
+                <select id="sortSelect" aria-label="Sắp xếp phim">
+                    <option value="latest">Mới cập nhật</option>
+                    <option value="views">Nhiều lượt xem</option>
+                </select>
+            </div>
+
+            <div id="videoList" class="video-list">
+                <button class="video-card active"
+                        data-title="Big Buck Bunny"
+                        data-type="youtube"
+                        data-src="https://www.youtube-nocookie.com/embed/f7NwyBnIRTE"
+                        data-date="20261005"
+                        data-views="980000"
+                        data-description="Phim hoạt hình 3D vui nhộn về chú thỏ Big Buck Bunny.">
+                    <span class="thumb thumb-blue">🐰</span>
+                    <span class="video-info">
+                        <strong>Big Buck Bunny</strong>
+                        <small>HD • 980K lượt xem</small>
+                    </span>
+                </button>
+
+                <button class="video-card"
+                        data-title="Chú thỏ vui nhộn"
+                        data-type="video"
+                        data-src="https://www.w3schools.com/html/mov_bbb.mp4"
+                        data-date="20261003"
+                        data-views="620000"
+                        data-description="Video HTML5 minh họa khả năng phát phim trực tiếp bằng thẻ video.">
+                    <span class="thumb thumb-yellow">🌈</span>
+                    <span class="video-info">
+                        <strong>Chú thỏ vui nhộn</strong>
+                        <small>HD • 620K lượt xem</small>
+                    </span>
+                </button>
+
+                <button class="video-card"
+                        data-title="Cuộc phiêu lưu trong rừng"
+                        data-type="video"
+                        data-src="https://www.w3schools.com/html/movie.mp4"
+                        data-date="20260929"
+                        data-views="350000"
+                        data-description="Một video demo ngắn dùng để thực hành layout và trình phát HTML5.">
+                    <span class="thumb thumb-green">🌳</span>
+                    <span class="video-info">
+                        <strong>Cuộc phiêu lưu trong rừng</strong>
+                        <small>HD • 350K lượt xem</small>
+                    </span>
+                </button>
+            </div>
+        </aside>
+
+        <section class="right-content">
+            <div id="playerArea" class="player-area">
+                <iframe
+                    id="youtubePlayer"
+                    src="https://www.youtube-nocookie.com/embed/f7NwyBnIRTE"
+                    title="Big Buck Bunny"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen>
+                </iframe>
+
+                <video id="html5Player" controls preload="metadata" hidden>
+                    Trình duyệt của bạn không hỗ trợ thẻ video.
+                </video>
+            </div>
+
+            <div class="watch-info">
+                <div>
+                    <span class="quality-badge">HD 720p - FullHD 1080p</span>
+                    <h1 id="currentTitle">Big Buck Bunny</h1>
+                    <p id="currentDescription">Phim hoạt hình 3D vui nhộn về chú thỏ Big Buck Bunny.</p>
+                </div>
+                <div class="safe-note">✓ Nội dung chọn lọc • Không chèn banner quảng cáo</div>
+            </div>
+
+            <section class="feature-grid" id="about">
+                <div class="feature-card">
+                    <h3>🔎 Tìm kiếm nhanh</h3>
+                    <p>Tìm phim theo tên ngay trong danh sách.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⭐ Sắp xếp linh hoạt</h3>
+                    <p>Xem phim mới cập nhật hoặc nhiều lượt xem.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📱 Responsive</h3>
+                    <p>Hiển thị tốt trên PC, tablet và điện thoại.</p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        © 2026 Kids Cartoon - Website thực hành HTML & CSS. Nội dung video demo phục vụ mục đích học tập.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
