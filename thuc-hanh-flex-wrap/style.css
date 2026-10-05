@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+    line-height: 1.6;
+}
+
+.page {
+    width: min(1000px, 92%);
+    margin: 0 auto;
+    padding: 40px 0 60px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.example-card {
+    background-color: white;
+    border: 1px solid #dfe5ec;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.example-card h2 {
+    margin-bottom: 8px;
+}
+
+.example-card p {
+    margin-bottom: 16px;
+}
+
+.example-card > code {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 8px 12px;
+    background-color: #eef2f6;
+    border-radius: 6px;
+    font-family: Consolas, monospace;
+}
+
+.flex-container {
+    display: flex;
+    width: 500px;
+    max-width: 100%;
+    gap: 10px;
+    padding: 12px;
+    border: 2px solid #333;
+    background-color: #fafafa;
+}
+
+.item {
+    width: 150px;
+    min-width: 150px;
+    padding: 30px 10px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.nowrap {
+    width: 400px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.nowrap .item {
+    background-color: lightgreen;
+    flex-shrink: 0;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.wrap .item {
+    background-color: lightblue;
+}
+
+.wrap-reverse {
+    flex-wrap: wrap-reverse;
+    height: 250px;
+    align-content: flex-start;
+}
+
+.wrap-reverse .item {
+    background-color: lightcoral;
+}
+
+.initial-value {
+    width: 400px;
+    flex-wrap: initial;
+    overflow-x: auto;
+}
+
+.initial-value .item {
+    background-color: lightyellow;
+    flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+    .page {
+        width: 94%;
+        padding-top: 24px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .example-card {
+        padding: 18px;
+    }
+
+    .flex-container {
+        width: 100%;
+    }
+
+    .item {
+        width: 130px;
+        min-width: 130px;
+        padding: 24px 8px;
+    }
+}
