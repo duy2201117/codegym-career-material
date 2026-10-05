@@ -16,17 +16,17 @@ h1 {
     margin: 20px;
 }
 
-.card:nth-child(2) {
+.card:nth-child(1) {
     box-sizing: content-box;
     background-color: #2ecc71;
 }
 
-.card:nth-child(3) {
+.card:nth-child(2) {
     box-sizing: border-box;
     background-color: #f1c40f;
 }
 
-.card:nth-child(4) {
+.card:nth-child(3) {
     box-sizing: border-box;
     background-color: #e74c3c;
     color: white;
