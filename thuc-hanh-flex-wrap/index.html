@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành CSS flex-wrap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page">
+        <h1>Thực hành CSS | flex-wrap Property</h1>
+        <p class="intro">Quan sát sự khác nhau giữa các giá trị <strong>nowrap</strong>, <strong>wrap</strong>, <strong>wrap-reverse</strong> và <strong>initial</strong>.</p>
+
+        <section class="example-card">
+            <h2>1. flex-wrap: nowrap</h2>
+            <p>Các Flex Items luôn nằm trên cùng một dòng. Trong ví dụ này các item không co lại để dễ quan sát.</p>
+            <div class="flex-container nowrap">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+            </div>
+            <code>flex-wrap: nowrap;</code>
+        </section>
+
+        <section class="example-card">
+            <h2>2. flex-wrap: wrap</h2>
+            <p>Khi không đủ chỗ, các Flex Items tự động xuống dòng tiếp theo.</p>
+            <div class="flex-container wrap">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+            </div>
+            <code>flex-wrap: wrap;</code>
+        </section>
+
+        <section class="example-card">
+            <h2>3. flex-wrap: wrap-reverse</h2>
+            <p>Các item vẫn giữ thứ tự trong từng dòng, nhưng hướng xếp các dòng trên cross axis bị đảo ngược.</p>
+            <div class="flex-container wrap-reverse">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+                <div class="item">Item 5</div>
+                <div class="item">Item 6</div>
+            </div>
+            <code>flex-wrap: wrap-reverse;</code>
+        </section>
+
+        <section class="example-card">
+            <h2>4. flex-wrap: initial</h2>
+            <p><code>initial</code> đưa thuộc tính về giá trị mặc định là <code>nowrap</code>.</p>
+            <div class="flex-container initial-value">
+                <div class="item">Item 1</div>
+                <div class="item">Item 2</div>
+                <div class="item">Item 3</div>
+                <div class="item">Item 4</div>
+            </div>
+            <code>flex-wrap: initial;</code>
+        </section>
+    </main>
+</body>
+</html>
