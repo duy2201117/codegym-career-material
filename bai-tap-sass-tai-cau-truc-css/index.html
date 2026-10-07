@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page - SASS Refactor</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="logo" href="#">GreenShop</a>
+      <nav class="nav">
+        <a class="nav__link nav__link--active" href="#home">Trang chủ</a>
+        <a class="nav__link" href="#products">Sản phẩm</a>
+        <a class="nav__link" href="#stats">Thống kê</a>
+        <a class="nav__link" href="#contact">Liên hệ</a>
+      </nav>
+      <a class="btn btn--primary" href="#products">Khám phá</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero__content">
+        <div class="hero__text">
+          <span class="hero__badge">Sản phẩm chất lượng cho cuộc sống hiện đại</span>
+          <h1>Không gian sống đẹp hơn bắt đầu từ những lựa chọn tốt hơn.</h1>
+          <p>Khám phá những sản phẩm nổi bật được tuyển chọn kỹ lưỡng, thiết kế tối giản và phù hợp với nhiều phong cách sống.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#products">Xem sản phẩm</a>
+            <a class="btn btn--outline" href="#stats">Tìm hiểu thêm</a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__card hero__card--one">01</div>
+          <div class="hero__card hero__card--two">02</div>
+          <div class="hero__card hero__card--three">03</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products section" id="products">
+      <div class="container">
+        <div class="section-heading">
+          <span>Sản phẩm nổi bật</span>
+          <h2>Lựa chọn được yêu thích</h2>
+          <p>Một số sản phẩm nổi bật trong bộ sưu tập hiện tại.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-card__image product-card__image--1">Ghế thư giãn</div>
+            <div class="product-card__body">
+              <h3>Ghế Minimal</h3>
+              <p>Thiết kế hiện đại, nhẹ nhàng và phù hợp với nhiều không gian.</p>
+              <div class="product-card__bottom"><strong>1.290.000đ</strong><button class="btn btn--small">Xem ngay</button></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__image product-card__image--2">Đèn trang trí</div>
+            <div class="product-card__body">
+              <h3>Đèn Nordic</h3>
+              <p>Ánh sáng ấm, kiểu dáng thanh lịch cho bàn làm việc hoặc phòng ngủ.</p>
+              <div class="product-card__bottom"><strong>790.000đ</strong><button class="btn btn--small">Xem ngay</button></div>
+            </div>
+          </article>
+          <article class="product-card">
+            <div class="product-card__image product-card__image--3">Bàn làm việc</div>
+            <div class="product-card__body">
+              <h3>Bàn WorkSpace</h3>
+              <p>Không gian làm việc gọn gàng với phong cách đơn giản và chắc chắn.</p>
+              <div class="product-card__bottom"><strong>2.490.000đ</strong><button class="btn btn--small">Xem ngay</button></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats section" id="stats">
+      <div class="container">
+        <div class="stats__box">
+          <div class="stat-item"><strong>12K+</strong><span>Khách hàng</span></div>
+          <div class="stat-item"><strong>320+</strong><span>Sản phẩm</span></div>
+          <div class="stat-item"><strong>98%</strong><span>Hài lòng</span></div>
+          <div class="stat-item"><strong>24/7</strong><span>Hỗ trợ</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container footer__grid">
+      <div><a class="logo logo--footer" href="#">GreenShop</a><p>Landing Page thực hành tái cấu trúc CSS bằng SASS/SCSS.</p></div>
+      <div><h4>Liên kết</h4><a href="#home">Trang chủ</a><a href="#products">Sản phẩm</a><a href="#stats">Thống kê</a></div>
+      <div><h4>Hỗ trợ</h4><a href="#">Câu hỏi thường gặp</a><a href="#">Chính sách</a><a href="#">Liên hệ</a></div>
+    </div>
+    <div class="container footer__bottom">© 2026 GreenShop. SASS Refactor Assignment.</div>
+  </footer>
+</body>
+</html>
